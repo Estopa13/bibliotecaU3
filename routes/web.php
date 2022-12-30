@@ -33,6 +33,10 @@ Route::get('/escritores.index', function () {
     return view('/escri');
 });;
 
+Route::get('/clasificacion.index', function () {
+    return view('/clasificacion');
+});;
+
 Route::get('/escritores.edit', function () {
     return view('escritores.edit');
 });
@@ -41,6 +45,13 @@ Route::get('/escritores.edit', function () {
 Route::resource('/escri',EscritorController::class);
 Route::resource('estantes', \App\Http\Controllers\EstanteController::class);
 
+Route::resource('/clasificacion',ClasifiacionController::class);
 
 //ruta clasificacion
 
+Route::get('/clasificacion.create', function () {
+    return view('clasificacion.create');
+});
+Route::get('/clasificacion.edit', function () {
+    return view('clasificacion.edit');
+});

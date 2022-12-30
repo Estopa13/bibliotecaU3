@@ -100,10 +100,8 @@ class ClasifiacionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id_clasificacion)
+    public function destroy($id)
     {
-        $clasificacion=clasificacion::find($id_clasificacion);
-        $clasificacion->delete();
-        return redirect()->route('clasificacion.index');
+
     }
 }

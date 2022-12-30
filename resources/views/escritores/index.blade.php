@@ -16,6 +16,7 @@
 <body>
     <div class="container">
         <h4>Gestion de Escritores</h4>
+        <a href="javascript:history.back()">Ir al Menu</a>
         <div class="row">
             <div class="col-xl-12">
                 <form href="escri.index" method="get">
